@@ -1,7 +1,10 @@
 import {Routes,Route} from "react-router-dom"
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
 import Header from "./components/Header/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Fiche from "./pages/Fichelogement";
+import Error from "./pages/Error";
+
 
 
 export default function App() {
@@ -12,6 +15,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/About" element={<About/>}/>
+            <Route path="/logement/:id" element={<Fiche />}/>
+            <Route path="*" element={<Error />} />
           </Routes>
         </main>
     </div>

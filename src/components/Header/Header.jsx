@@ -3,11 +3,11 @@ import Navbar from "../Navbar/Navbar"
 
 export default function Header(){
     return(
-        <header>
-            <figure>
+        <header className="head">
+            <figure className="head_figure">
                 <img src={logo} alt="Logo kasa"/>
             </figure>
-            <Navbar/>
+            <Navbar className="head_navbar"/>
         </header>
     )
 }
