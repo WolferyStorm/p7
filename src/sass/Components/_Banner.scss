@@ -1,0 +1,16 @@
+.banner{
+    height: 223px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    &_fond{
+        //background-image: url(../../components/Assets/Images/Home.png);
+        width: 100%;
+        &_text{
+            color: $tertiary-color;
+            font-size: 48px;
+            display: flex;
+            justify-content: center;   
+        }
+    }
+}

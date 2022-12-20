@@ -4,6 +4,65 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  margin: auto;
+}
+
+main {
+  margin: 40px;
+}
+
+.aboutban {
+  background: black;
+}
+
+.banner {
+  height: 223px;
+  width: 100%;
+  background-color: black;
+  border-radius: 25px;
+}
+.banner_fond {
+  width: 100%;
+}
+.banner_fond_text {
+  color: #FFFFFF;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  border: solid;
+}
+.card_img {
+  border-radius: 10px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.card_div {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.foot {
+  height: 209px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.foot_img {
+  height: 39.44px;
+}
+.foot_text {
+  color: #FFFFFF;
+}
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -13,4 +72,18 @@
 .nav_1, .nav_2 {
   color: #ff6060;
   margin: 20px;
+}
+
+.home-container {
+  background: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  justify-content: center;
+  width: 100%;
+}
+.home-container_link {
+  margin: 20px;
+  border-radius: 10px;
+  width: 30%;
 }/*# sourceMappingURL=main.css.map */
