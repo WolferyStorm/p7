@@ -1,16 +1,23 @@
 .banner{
+    
     height: 223px;
     width: 100%;
-    background-color: black;
     border-radius: 25px;
-    &_fond{
-        //background-image: url(../../components/Assets/Images/Home.png);
-        width: 100%;
-        &_text{
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        p{
             color: $tertiary-color;
             font-size: 48px;
-            display: flex;
-            justify-content: center;   
+            font-weight: 500;
+            position: absolute;
+            left: 25.9%;
+            right: 25.14%;
+            top: 24.32%;
+            bottom: 69.04%;
+            
         }
-    }
+    
 }
