@@ -1,0 +1,23 @@
+.carrousel-container{
+    width: 100%;
+    height: 415px;
+    margin: 0 auto;
+}
+.fiche-container{
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-weight: 500;
+        font-size: 36px;
+        margin: 0;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    color:$primary-color;
+    &_collapse{
+        display: flex;
+        gap: 10px;
+    }
+}

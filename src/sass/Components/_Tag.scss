@@ -1,0 +1,10 @@
+.tag{
+    display: flex;
+    &_button{
+        background-color: $primary-color;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        height: 25px;
+    }
+}

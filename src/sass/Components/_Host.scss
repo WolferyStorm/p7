@@ -1,0 +1,13 @@
+.host{
+    display: flex;
+    color:$primary-color;
+    &_name{
+        font-weight: 500;
+        font-size: 18px;
+        align-self: center;
+    }
+    img{
+        border-radius: 64px;
+        height: 64px;
+    }
+}

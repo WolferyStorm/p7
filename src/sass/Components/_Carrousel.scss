@@ -1,0 +1,28 @@
+.carrousel{
+     height: 100%;
+     position: relative;
+     img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+     }
+}
+.arrow-left{
+    position: absolute;
+    top: 40%;
+    left: 32px;
+    font-size: 79.2px;
+    z-index: 1;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+.arrow-right{
+    position: absolute;
+    top: 40%;
+    right: 32px;
+    font-size: 79.2px;
+    z-index: 1;
+    cursor: pointer;
+    color: #f0f0f0;
+}

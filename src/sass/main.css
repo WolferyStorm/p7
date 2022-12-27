@@ -13,29 +13,35 @@ main {
 }
 
 .aboutban {
+  background-color: black;
   height: 223px;
   border-radius: 25px;
   margin: 50px 0;
 }
 .aboutban img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
+  opacity: 0.6;
 }
 
 .banner {
+  background-color: black;
   height: 223px;
   width: 100%;
   border-radius: 25px;
 }
 .banner img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
+  opacity: 0.6;
 }
-.banner p {
+.banner div {
   color: #FFFFFF;
   font-size: 48px;
   font-weight: 500;
@@ -70,6 +76,38 @@ main {
   color: #FFFFFF;
 }
 
+.carrousel {
+  height: 100%;
+  position: relative;
+}
+.carrousel img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 40%;
+  left: 32px;
+  font-size: 79.2px;
+  z-index: 1;
+  cursor: pointer;
+  color: #f0f0f0;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 40%;
+  right: 32px;
+  font-size: 79.2px;
+  z-index: 1;
+  cursor: pointer;
+  color: #f0f0f0;
+}
+
 .collapse {
   height: 47px;
   width: 100%;
@@ -78,6 +116,7 @@ main {
   font-weight: 400;
   font-size: 24px;
   color: #ff6060;
+  cursor: pointer;
 }
 .collapse_header {
   font-weight: 500;
@@ -93,6 +132,7 @@ main {
 .collapse_body {
   background-color: #f7f7f7;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .foot {
@@ -116,9 +156,34 @@ main {
   align-items: center;
 }
 
+.host {
+  display: flex;
+  color: #ff6060;
+}
+.host_name {
+  font-weight: 500;
+  font-size: 18px;
+  align-self: center;
+}
+.host img {
+  border-radius: 64px;
+  height: 64px;
+}
+
 .nav_1, .nav_2 {
   color: #ff6060;
   margin: 20px;
+}
+
+.tag {
+  display: flex;
+}
+.tag_button {
+  background-color: #ff6060;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 25px;
 }
 
 .about {
@@ -128,7 +193,7 @@ main {
   align-items: center;
   width: 70%;
   gap: 50px;
-  margin: 70px 0;
+  margin: 70px auto;
 }
 
 .error {
@@ -154,6 +219,31 @@ main {
   font-size: 18px;
   color: #ff6060;
   margin-top: 120px;
+}
+
+.carrousel-container {
+  width: 100%;
+  height: 415px;
+  margin: 0 auto;
+}
+
+.fiche-container {
+  display: flex;
+  justify-content: space-between;
+  color: #ff6060;
+}
+.fiche-container h1 {
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0;
+}
+.fiche-container h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.fiche-container_collapse {
+  display: flex;
+  gap: 10px;
 }
 
 .home-container {

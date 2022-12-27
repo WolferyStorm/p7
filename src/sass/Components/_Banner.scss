@@ -1,14 +1,17 @@
 .banner{
-    
+    background-color: black;
     height: 223px;
     width: 100%;
     border-radius: 25px;
         img{
+            
+            height: 100%;
             width: 100%;
             object-fit: cover;
             border-radius: 25px;
+            opacity: 0.6;
         }
-        p{
+        div{
             color: $tertiary-color;
             font-size: 48px;
             font-weight: 500;
