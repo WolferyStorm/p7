@@ -1,8 +1,6 @@
 .collapse{
-    height: 47px;
+    height: auto;
     width: 100%;
-    background: $primary-color;
-    border-radius: 5px;
     font-weight: 400;
     font-size: 24px;
     color: $primary-color;
@@ -10,8 +8,10 @@
     
     
     &_header{
+        border-radius: 5px;
         font-weight: 500;
         font-size: 24px;
+        background: $primary-color;
         color: $tertiary-color;
         width: 100%;
         display: flex;
@@ -23,6 +23,7 @@
 }
 
 .collapse_body{
+    height: auto;
     background-color: $secondary-color;
     padding: 20px;
     border-radius: 5px;

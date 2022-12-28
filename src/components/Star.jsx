@@ -1,12 +1,15 @@
-export default function Star({props}) {
+import staro from "../components/Assets/Images/starco.svg"
+import starw from "../components/Assets/Images/starwh.svg"
+
+export default function Star({score}) {
     const rating = [1,2,3,4,5]
 	return (
 		<div className="rate-comp">
 			{rating.map((level) =>
-				props >= level ? (
-					<i key={level} className="fa-sharp fa-solid fa-star-sharp"></i>
+				score >= level ? (
+					<img key={level.toString()} className="star" src={staro} alt="étoile pleine"/>
 				) : (
-					<i key={level} className="fa-sharp fa-solid fa-star-sharp"></i>
+					<img key={level.toString()} className="star" src={starw} alt="étoile vide"/>
 				)
 			)}
 		</div>

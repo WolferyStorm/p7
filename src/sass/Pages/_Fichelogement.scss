@@ -6,6 +6,7 @@
 .fiche-container{
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
     h1{
         font-weight: 500;
         font-size: 36px;
@@ -20,4 +21,13 @@
         display: flex;
         gap: 10px;
     }
+}
+.fiche-tag{
+    display: flex;
+    gap:20px;
+}
+.tag-star-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }

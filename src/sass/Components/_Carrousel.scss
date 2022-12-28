@@ -7,6 +7,16 @@
         object-fit: cover;
         border-radius: 25px;
      }
+     &_number{
+        position: absolute;
+        left: 48.95%;
+        right: 49.11%;
+        top: 86.19%;
+        bottom: 6.01%;
+        font-weight: 500;
+        font-size: 18px;
+        color: #f0f0f0;
+     }
 }
 .arrow-left{
     position: absolute;

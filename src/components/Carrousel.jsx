@@ -16,6 +16,7 @@ export default function Carrousel ({slides}){
             <i className="fa-sharp fa-solid fa-chevron-left arrow-left" onClick={previousSlide}></i>
             <i className="fa-sharp fa-solid fa-chevron-right arrow-right" onClick={nextSlide}></i>
             <img src={slides[current]} alt="Appartement à louer" />
+            <div className="carrousel_number">{current+1}/{length}</div>
         </div>
     )
 }

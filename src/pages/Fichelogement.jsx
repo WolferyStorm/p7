@@ -25,12 +25,14 @@ export default function Fiche(){
                     <Host hostName={findLogement.host.name} hostPic={findLogement.host.picture}/>
                 </div>
             </div>
-            <div>
-                <div>
-                    <Tag tag={findLogement.tags}/>
+            <div className="tag-star-container">
+                <div className="fiche-tag">
+                {findLogement.tags.map((tag) => (
+								<Tag key={tag} tag={tag} />
+							))}
                 </div>
                 <div>
-                    <Star props={findLogement.rating}/>
+                    <Star score={findLogement.rating}/>
                 </div>
             </div>
             <div className="fiche-container_collapse">

@@ -87,6 +87,16 @@ main {
      object-fit: cover;
   border-radius: 25px;
 }
+.carrousel_number {
+  position: absolute;
+  left: 48.95%;
+  right: 49.11%;
+  top: 86.19%;
+  bottom: 6.01%;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f0f0f0;
+}
 
 .arrow-left {
   position: absolute;
@@ -109,18 +119,18 @@ main {
 }
 
 .collapse {
-  height: 47px;
+  height: auto;
   width: 100%;
-  background: #ff6060;
-  border-radius: 5px;
   font-weight: 400;
   font-size: 24px;
   color: #ff6060;
   cursor: pointer;
 }
 .collapse_header {
+  border-radius: 5px;
   font-weight: 500;
   font-size: 24px;
+  background: #ff6060;
   color: #FFFFFF;
   width: 100%;
   display: flex;
@@ -130,6 +140,7 @@ main {
 }
 
 .collapse_body {
+  height: auto;
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 5px;
@@ -175,15 +186,21 @@ main {
   margin: 20px;
 }
 
+.star {
+  height: 30px;
+  width: 30px;
+}
+
 .tag {
   display: flex;
-}
-.tag_button {
   background-color: #ff6060;
   border-radius: 10px;
   font-weight: 500;
   font-size: 14px;
   height: 25px;
+  color: #f0f0f0;
+  padding: 15px;
+  align-items: center;
 }
 
 .about {
@@ -230,6 +247,7 @@ main {
 .fiche-container {
   display: flex;
   justify-content: space-between;
+  margin: 20px 0;
   color: #ff6060;
 }
 .fiche-container h1 {
@@ -244,6 +262,17 @@ main {
 .fiche-container_collapse {
   display: flex;
   gap: 10px;
+}
+
+.fiche-tag {
+  display: flex;
+  gap: 20px;
+}
+
+.tag-star-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .home-container {

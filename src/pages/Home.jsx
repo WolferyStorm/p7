@@ -12,7 +12,7 @@ export default function Home(){
             data.map(logement =>{
                 return(
                     <div className="home-container_link" key={logement.id} >
-                            <Link className="home-container_link">
+                            <Link className="home-container_link" to={`/logement/${logement.id}`}>
                             <Card  cover={logement.cover} title={logement.title}/>
                             </Link>
                     </div>
