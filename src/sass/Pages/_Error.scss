@@ -16,9 +16,20 @@
 }
 
 .error_link_home{
-    text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     color: $primary-color;
     margin-top: 120px;
+}
+@media  screen and (max-width:$breakpoint) {
+    .error_number{
+        font-size: 96px;
+    }
+    .error_text{
+        font-size: 18px;
+    }
+    .error_link_home{
+        font-size: 14px;
+    }
+    
 }

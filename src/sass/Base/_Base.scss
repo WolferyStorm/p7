@@ -5,8 +5,16 @@
     font-family: 'Montserrat',sans-serif;
 }
 body{
+    margin: 0 auto;
+}
+p{
     margin: 0;
 }
 main{
     margin:0 40px;
+}
+@media screen and (max-width:$breakpoint){
+    main{
+        margin: 0 15px;
+    }
 }

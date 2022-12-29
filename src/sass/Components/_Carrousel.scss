@@ -1,5 +1,5 @@
 .carrousel{
-     height: 100%;
+     height: 415px;
      position: relative;
      img{
         height: 100%;
@@ -35,4 +35,13 @@
     z-index: 1;
     cursor: pointer;
     color: #f0f0f0;
+}
+@media screen and (max-width:$breakpoint){
+    .carrousel{
+        height: 255px;
+        .arrow-left{
+            height: 19.8px;
+        }
+    }
+
 }

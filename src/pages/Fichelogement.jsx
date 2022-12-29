@@ -1,44 +1,71 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import data from "../logement.json";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import Star from "../components/Star";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export default function Fiche(){
     const params = useParams();
-    console.log(params)
-    const findLogement = data.find((logement) => logement.id === params.id )
-    console.log(findLogement)
+    const navigate = useNavigate();
+    const [bean,setBean] = useState({});
+    const [found,setFound] = useState(false);
+    const [options,setOPtion] = useState({})
+
+    useEffect(()=>{
+        let findLogement = data.find((logement) => logement.id === params.id )
+
+    if (findLogement !== undefined ){
+        setBean(findLogement)
+        let equip =findLogement.equipments.map((item, index) => (
+			<li key={index} className="equip">
+				{item}
+			</li>
+		));
+        setOPtion(equip)
+        setFound(true)
+    }
+    else{
+        navigate("/error")
+    }
+    },[found])
+    
+    
     return(
-        <section>
+        <>
+        {found && (<section>
             <div className="carrousel-container">
-                <Carrousel slides={findLogement.pictures}/>
+                <Carrousel slides={bean.pictures}/>
             </div>
-            <div  className="fiche-container">
-                <div>
-                    <h1>{findLogement.title}</h1>
-                    <h2>{findLogement.location}</h2>
-                </div>
-                <div>
-                    <Host hostName={findLogement.host.name} hostPic={findLogement.host.picture}/>
-                </div>
-            </div>
-            <div className="tag-star-container">
-                <div className="fiche-tag">
-                {findLogement.tags.map((tag) => (
-								<Tag key={tag} tag={tag} />
+            <div className="info">
+                <div  className="fiche-container">
+                    <div>
+                        <h1>{bean.title}</h1>
+                        <h2>{bean.location}</h2>
+                    </div>
+                    <div className="fiche-tag">
+                        {bean.tags.map((tag) => (
+							<Tag key={tag} tag={tag} />
 							))}
+                    </div>
                 </div>
-                <div>
-                    <Star score={findLogement.rating}/>
+                <div className="star-container">
+                    <div>
+                     <Host hostName={bean.host.name} hostPic={bean.host.picture}/>
+                    </div>
+                    <div>
+                     <Star score={bean.rating}/>
+                    </div>
                 </div>
             </div>
             <div className="fiche-container_collapse">
-                <Collapse aboutTitle="Description" aboutText={findLogement.description} />
-                <Collapse aboutTitle="Équipements" aboutText={findLogement.equipments}/>
+                <Collapse aboutTitle="Description" aboutText={bean.description} />
+                <Collapse aboutTitle="Équipements" aboutText={options}/>
             </div>
         </section>
-    )
-}
+    )}
+        </>
+)}
