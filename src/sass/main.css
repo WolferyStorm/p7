@@ -199,7 +199,15 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.head img {
+  height: 68px;
+}
 
+@media screen and (max-width: 880px) {
+  .head img {
+    height: 47px;
+  }
+}
 .host {
   display: flex;
   color: #ff6060;
