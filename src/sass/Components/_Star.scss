@@ -1,4 +1,12 @@
+
 .star{
     height: 30px;
     width: 30px;
+    padding: 3px;
+}
+@media screen and (max-width: $breakpoint) {
+    .star{
+        height: 15px;
+        width: 15px;
+    }
 }

@@ -9,3 +9,8 @@
     padding: 15px;
     align-items: center;
 }
+@media screen and (max-width: $breakpoint) {
+    .tag{
+        font-size: 10px;
+    }
+}

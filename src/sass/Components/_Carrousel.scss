@@ -39,8 +39,9 @@
 @media screen and (max-width:$breakpoint){
     .carrousel{
         height: 255px;
-        .arrow-left{
-            height: 19.8px;
+        i{
+            font-size: 19.8px;
+            top: 50%;
         }
     }
 

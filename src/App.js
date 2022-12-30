@@ -9,8 +9,8 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <div className="App">
-      <Header/>
         <main>
+        <Header/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>

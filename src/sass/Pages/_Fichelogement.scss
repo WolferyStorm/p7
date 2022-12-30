@@ -33,8 +33,7 @@
 .star-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: center;
 }
 .equip{
     list-style: none;
@@ -49,6 +48,13 @@
     .star-container{
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
+        h1{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 14px;
+        }
     }
     .fiche-container_collapse{
         display: flex;

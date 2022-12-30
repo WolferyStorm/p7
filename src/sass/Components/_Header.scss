@@ -1,8 +1,12 @@
 .head{
     display:flex;
-    width: 100%;
+    width: auto;
     justify-content: space-between;
     align-items: center;
+    margin: 16px auto;
+    &_figure{
+        margin: 0;
+    }
     img{
         height: 68px;
     }

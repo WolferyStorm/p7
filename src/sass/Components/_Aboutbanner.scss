@@ -1,13 +1,27 @@
 .aboutban{
     background-color: black;
     height: 223px;
+    width: 100%;
     border-radius: 25px;
     margin: 50px 0;
+    &_2{
+        display: none;
+    }
     img{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit:cover;
         border-radius: 25px;
         opacity: 0.6;
+    }
+}
+@media screen and (max-width:$breakpoint){
+    .aboutban{
+        &_1{
+            display: none;
+        }
+        &_2{
+            display: block;
+        }
     }
 }

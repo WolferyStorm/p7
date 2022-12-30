@@ -24,8 +24,12 @@ main {
 .aboutban {
   background-color: black;
   height: 223px;
+  width: 100%;
   border-radius: 25px;
   margin: 50px 0;
+}
+.aboutban_2 {
+  display: none;
 }
 .aboutban img {
   height: 100%;
@@ -36,6 +40,14 @@ main {
   opacity: 0.6;
 }
 
+@media screen and (max-width: 880px) {
+  .aboutban_1 {
+    display: none;
+  }
+  .aboutban_2 {
+    display: block;
+  }
+}
 .banner {
   background-color: black;
   height: 223px;
@@ -50,7 +62,7 @@ main {
   border-radius: 25px;
   opacity: 0.6;
 }
-.banner div {
+.banner p {
   color: #FFFFFF;
   font-size: 48px;
   font-weight: 500;
@@ -65,8 +77,12 @@ main {
   .banner {
     height: 111px;
   }
-  .banner div {
+  .banner p {
     font-size: 24px;
+    left: 9.6%;
+    right: 32.53%;
+    top: 16.04%;
+    bottom: 80.05%;
   }
 }
 .card {
@@ -146,8 +162,9 @@ main {
   .carrousel {
     height: 255px;
   }
-  .carrousel .arrow-left {
-    height: 19.8px;
+  .carrousel i {
+    font-size: 19.8px;
+    top: 50%;
   }
 }
 .collapse {
@@ -178,6 +195,14 @@ main {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 880px) {
+  .collapse_header {
+    font-size: 13px;
+  }
+  .collapse_body {
+    font-size: 12px;
+  }
+}
 .foot {
   height: 209px;
   background-color: black;
@@ -195,9 +220,13 @@ main {
 
 .head {
   display: flex;
-  width: 100%;
+  width: auto;
   justify-content: space-between;
   align-items: center;
+  margin: 16px auto;
+}
+.head_figure {
+  margin: 0;
 }
 .head img {
   height: 68px;
@@ -223,21 +252,45 @@ main {
   height: 64px;
 }
 
+@media screen and (max-width: 880px) {
+  .host_name {
+    font-size: 12px;
+  }
+  .host img {
+    height: 32px;
+  }
+}
 .nav {
-  display: flex;
   align-items: center;
 }
 .nav_1, .nav_2 {
   color: #ff6060;
-  margin: 0 20px;
   text-decoration: none;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.nav_1:focus, .nav_2:focus {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
+@media screen and (max-width: 880px) {
+  .nav_1, .nav_2 {
+    font-size: 12px;
+  }
+}
 .star {
   height: 30px;
   width: 30px;
+  padding: 3px;
 }
 
+@media screen and (max-width: 880px) {
+  .star {
+    height: 15px;
+    width: 15px;
+  }
+}
 .tag {
   display: flex;
   background-color: #ff6060;
@@ -250,6 +303,11 @@ main {
   align-items: center;
 }
 
+@media screen and (max-width: 880px) {
+  .tag {
+    font-size: 10px;
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -263,6 +321,7 @@ main {
 @media screen and (max-width: 880px) {
   .about {
     width: 100%;
+    margin: 15px 0;
   }
 }
 .error {
@@ -339,8 +398,7 @@ main {
 .star-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 20px 0;
+  justify-content: center;
 }
 
 .equip {
@@ -357,6 +415,13 @@ main {
   .star-container {
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
+  }
+  .star-container h1 {
+    font-size: 18px;
+  }
+  .star-container h2 {
+    font-size: 14px;
   }
   .fiche-container_collapse {
     display: flex;

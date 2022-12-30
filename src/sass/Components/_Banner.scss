@@ -3,6 +3,7 @@
     height: 223px;
     width: 100%;
     border-radius: 25px;
+    
         img{
             
             height: 100%;
@@ -11,7 +12,7 @@
             border-radius: 25px;
             opacity: 0.6;
         }
-        div{
+        p{
             color: $tertiary-color;
             font-size: 48px;
             font-weight: 500;
@@ -27,8 +28,12 @@
 @media screen and (max-width:$breakpoint){
     .banner{
         height: 111px;
-        div{
-            font-size: 24px;
+        p{
+            font-size: 24px;left: 9.6%;
+            right: 32.53%;
+            top: 16.04%;
+            bottom: 80.05%;
+            
         }
     }
 }

@@ -28,4 +28,13 @@
     padding: 20px;
     border-radius: 5px;
 }
-
+@media screen and (max-width: $breakpoint) {
+    .collapse{
+        &_header{
+            font-size: 13px;
+        }
+    }
+    .collapse_body{
+        font-size: 12px;
+    }
+}
