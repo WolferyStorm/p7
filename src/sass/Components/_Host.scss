@@ -2,17 +2,17 @@
     display: flex;
     color:$primary-color;
     &_name{
-        
+        width: 50px;
         font-weight: 500;
         font-size: 18px;
         align-self: center;
         text-align: right;
-        
-        
+        flex-wrap: wrap;  
     }
     img{
         border-radius: 64px;
         height: 64px;
+        margin-left: 20px;
     }
 }
 @media screen and (max-width: $breakpoint) {

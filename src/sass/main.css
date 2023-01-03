@@ -242,14 +242,17 @@ main {
   color: #ff6060;
 }
 .host_name {
+  width: 50px;
   font-weight: 500;
   font-size: 18px;
   align-self: center;
   text-align: right;
+  flex-wrap: wrap;
 }
 .host img {
   border-radius: 64px;
   height: 64px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 880px) {
@@ -269,9 +272,8 @@ main {
   margin-left: 20px;
   font-size: 24px;
 }
-.nav_1:focus, .nav_2:focus {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.nav_1.active, .nav_2.active {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 880px) {

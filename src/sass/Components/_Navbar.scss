@@ -6,8 +6,8 @@
         text-decoration: none;
         margin-left:20px;
         font-size: 24px;
-        &:focus{
-            text-decoration-line: underline;
+        &.active{
+            text-decoration: underline;
         }
     }
 }
